@@ -26,6 +26,7 @@ function showMole() {
 
 // Start the game
 function startGame() {
+  console.log("Game started");
   score = 0;
   moleCount = 0;
   gameRunning = true;

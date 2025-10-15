@@ -24,7 +24,14 @@ body {
 }
 
 .mole {
-  background: #8b4513;
+  /* Show the mole image instead of a plain brown circle */
+  /* If mole.jpg is in a different folder, update the path below */
+  background-image: url('mole.jpg');
+  background-size: cover;      /* fill the circular area */
+  background-position: center; /* keep the mole centered */
+  background-repeat: no-repeat;
+  background-color: #8b4513;   /* fallback color if image can't load */
+
   border-radius: 50%;
   position: absolute;
   top: 100%;
